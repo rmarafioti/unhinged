@@ -3,7 +3,7 @@ import "./App.css";
 
 import store from "./assets/store";
 import { Provider } from "react-redux";
-import Gallery from "../components/Gallery";
+import Gallery from "./Gallery";
 
 function App() {
   return (

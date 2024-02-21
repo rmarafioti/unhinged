@@ -1,5 +1,5 @@
 import React from "react";
-import { increment } from "../src/assets/gallerySlice";
+import { increment } from "./assets/gallerySlice";
 import { useDispatch, useSelector } from "react-redux";
 
 export default function Gallery() {
@@ -8,12 +8,12 @@ export default function Gallery() {
 
   const currentImageObj =
     images.length > 0 ? images[currentIndex % images.length] : null;
-
+  const imageurl = new URL(currentImageObj.image, import.meta.url).href;
   return (
     <>
       {currentImageObj && (
         <>
-          <img src={currentImageObj.image} />
+          <img src={imageurl} />
           <p>{currentImageObj.id}</p>
         </>
       )}
