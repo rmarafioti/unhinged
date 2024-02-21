@@ -1,18 +1,18 @@
 export const galleryPics = [
   {
     id: 1,
-    image: "../images/flyer.jpg",
+    image: "./images/flyer.jpg",
   },
   {
     id: 2,
-    image: "../images/heart.jpg",
+    image: "./images/flyer.jpg",
   },
   {
     id: 3,
-    image: "../images/shop.jpeg",
+    image: "./images/shop.jpeg",
   },
   {
     id: 4,
-    image: "../images/morton.jpg",
+    image: "./images/morton.jpg",
   },
 ];

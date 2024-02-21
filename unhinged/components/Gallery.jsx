@@ -6,13 +6,20 @@ export default function Gallery() {
   const { images, currentIndex } = useSelector((state) => state.gallery);
   const dispatch = useDispatch();
 
-  const currentImage =
-    images.length > 0 ? images[currentIndex % images.length].image : null;
+  const currentImageObj =
+    images.length > 0 ? images[currentIndex % images.length] : null;
 
   return (
     <>
-      {currentImage && <img src={currentImage} />}
-      <button onClick={() => dispatch(increment())}>Click Me!</button>
+      {currentImageObj && (
+        <>
+          <img src={currentImageObj.image} />
+          <p>{currentImageObj.id}</p>
+        </>
+      )}
+      <button onClick={() => dispatch(increment())}>
+        Doom Click Me to 13!
+      </button>
     </>
   );
 }
