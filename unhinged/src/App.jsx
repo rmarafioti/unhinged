@@ -1,11 +1,16 @@
 import { useState } from "react";
 import "./App.css";
+
 import store from "./assets/store";
+import { Provider } from "react-redux";
+import Gallery from "../components/Gallery";
 
 function App() {
   return (
     <>
-      <Provider store={store}></Provider>
+      <Provider store={store}>
+        <Gallery />
+      </Provider>
     </>
   );
 }
