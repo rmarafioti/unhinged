@@ -13,6 +13,7 @@ export default function Gallery() {
     <>
       {currentImageObj && (
         <>
+          <p>¯\_(ツ)_/¯</p>
           <img src={imageurl} />
           <p>{currentImageObj.id}</p>
         </>
