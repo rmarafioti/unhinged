@@ -1,3 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid green;
+}
+
+html, body {
+  background-image: url("./assets/images/soloBackground.jpeg");
+ 
+                     
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,14 +21,22 @@
   text-align: center;
 }
 
+
+
 #shrug {
+ text-align: center;
   font-size: 6rem;
   margin: 0;
 }
 
+#load {
+  font-size: 12rem;
+}
+
 #images {
-  border: .1em solid;
-  border-color: rgb(155, 212, 23);
+  background-color: white;
+  border: .3em solid;
+  border-color: rgb(109, 165, 233);
   border-radius: 25px;
 
   padding: .5em;

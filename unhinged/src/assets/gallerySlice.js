@@ -10,9 +10,15 @@ const gallerySlice = createSlice({
   name: "gallery",
   initialState,
 
+  /*
+   *increment checks if the current image index is less than the length of the object of images
+   *update the current image to the next image until the last image
+   */
   reducers: {
     increment: (state) => {
-      state.currentIndex = (state.currentIndex + 1) % state.images.length;
+      if (state.currentIndex < state.images.length - 1) {
+        state.currentIndex += 1;
+      }
     },
   },
 });
