@@ -1,6 +1,7 @@
 import React from "react";
 import { increment } from "./assets/gallerySlice";
 import { useDispatch, useSelector } from "react-redux";
+import "./App.css";
 
 export default function Gallery() {
   const { images, currentIndex } = useSelector((state) => state.gallery);
@@ -13,8 +14,8 @@ export default function Gallery() {
     <>
       {currentImageObj && (
         <>
-          <p>¯\_(ツ)_/¯</p>
-          <img src={imageurl} />
+          <p id="shrug">¯\_(ツ)_/¯</p>
+          <img id="images" src={imageurl} />
           <p>{currentImageObj.id}</p>
         </>
       )}

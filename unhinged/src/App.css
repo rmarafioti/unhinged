@@ -5,6 +5,19 @@
   text-align: center;
 }
 
+#shrug {
+  font-size: 6rem;
+  margin: 0;
+}
+
+#images {
+  border: .1em solid;
+  border-color: rgb(155, 212, 23);
+  border-radius: 25px;
+
+  padding: .5em;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
