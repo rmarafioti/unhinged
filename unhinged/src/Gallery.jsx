@@ -26,12 +26,47 @@ export default function Gallery() {
     <>
       {currentImageObj && (
         <>
-          <p id="shrug">¯\_(ツ)_/¯</p>
-          {isLoading ? <p id="load">💀</p> : <img id="images" src={imageurl} />}
-          <p>{currentImageObj.id}</p>
+          <section id="shrugSec">
+            <p id="shrug1end">¯\_(ツ)_/¯</p>
+            <p id="shrug2">¯\_(ツ)_/¯</p>
+            <p id="shrug1">¯\_(ツ)_/¯</p>
+            <p id="shrug2end">¯\_(ツ)_/¯</p>
+          </section>
+          <section id="shrugSec">
+            <p id="shrug2ended">¯\_(ツ)_/¯</p>
+            <p id="shrug1">¯\_(ツ)_/¯</p>
+            <p id="shrug2">¯\_(ツ)_/¯</p>
+            <p id="shrug1ended">¯\_(ツ)_/¯</p>
+          </section>
+          <section id="pic">
+            {isLoading ? (
+              <p id="load">💀</p>
+            ) : (
+              <img id="images" src={imageurl} />
+            )}
+          </section>
+          <section id="number">
+            <p>{currentImageObj.id}</p>
+          </section>
         </>
       )}
-      <button onClick={handleClick}>Doom Click Me to 13!</button>
+      <section id="click">
+        <button id="button" onClick={handleClick}>
+          Doom Click Me to 13!
+        </button>
+      </section>
+      <section id="shrugSec">
+        <p id="shrug1end">¯\_(ツ)_/¯</p>
+        <p id="shrug2">¯\_(ツ)_/¯</p>
+        <p id="shrug1">¯\_(ツ)_/¯</p>
+        <p id="shrug2end">¯\_(ツ)_/¯</p>
+      </section>
+      <section id="shrugSec">
+        <p id="shrug2ended">¯\_(ツ)_/¯</p>
+        <p id="shrug1">¯\_(ツ)_/¯</p>
+        <p id="shrug2">¯\_(ツ)_/¯</p>
+        <p id="shrug1ended">¯\_(ツ)_/¯</p>
+      </section>
     </>
   );
 }
