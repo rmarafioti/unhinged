@@ -5,33 +5,68 @@
   border: 0px solid green;
 }
 
-html, body {
+#root {
+  display: flex;
+  width: 100%;
+}
+
+body {
   background-color: rgb(149, 95, 29);
   background-image: url("./assets/images/soloBackground.jpeg");
   background-blend-mode: difference;
-
-  background-size: 150%;
-  background-repeat: repeat;
+  width: 100%;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  
   justify-content: center;
- 
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#shrugSec {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 848px) {
+  #shrugSec {
+      align-items: center;
+      flex-direction: column;}
 }
 
 #shrug1end {
   background-color: yellow;
   border-top-left-radius: 25px;
   color: black;
- text-align: center;
-  font-size: 3rem;
+  text-align: center;
+  font-size: 2rem;
   margin: 0;
+  padding: 1rem;
 }
 
 #shrug1ended {
   background-color: yellow;
   border-bottom-right-radius: 25px;
   color: black;
- text-align: center;
-  font-size: 3rem;
+  text-align: center;
+  font-size: 2rem;
   margin: 0;
+  padding: 1rem;
 }
 
 #shrug2end {
@@ -39,74 +74,69 @@ html, body {
   background-color: red;
   color: white;
  text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
+  padding: 1rem;
 }
 
 #shrug2ended {
   background-color: red;
   border-bottom-left-radius: 25px;
   color: white;
- text-align: center;
-  font-size: 3rem;
+  text-align: center;
+  font-size: 2rem;
   margin: 0;
+  padding: 1rem;
 }
 
-
-
-
 #shrug1 {
-  
   background-color: yellow;
   color: black;
  text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
+  padding: 1rem;
 }
 
 #shrug2 {
-
   background-color: red;
   color: white;
- text-align: center;
-  font-size: 3rem;
+  text-align: center;
+  font-size: 2rem;
   margin: 0;
+  padding: 1rem;
 }
 
 #load {
   text-align: center;
   font-size: 12rem;
 }
+
 #pic {
-  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
+
 #images {
   background-color: white;
   border-radius: 25px;
-
   padding: .5em;
+  max-width: 100%;
 }
 
-section {
-
-  display: flex;
-  justify-content: center;
+#clickText {
+  font-size: 2rem;
+  text-align: center;
 }
 
 #number {
   color: white;
   font-size: 2rem;
+  text-align: center;
 }
 
-#click {
-  margin-bottom: 2rem;
-}
-#button {
-  
-  background-color: white;
-  color: black;
-  box-shadow: 12px 12px 2px 1px black;
-}
+
+
 
 
 

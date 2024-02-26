@@ -51,4 +51,16 @@ export const galleryPics = [
     id: 13,
     image: "./assets/images/shrug.png",
   },
+  {
+    id: 14,
+    image: "./assets/images/shrug.png",
+  },
+  {
+    id: 15,
+    image: "./assets/images/shrug.png",
+  },
+  {
+    id: 16,
+    image: "./assets/images/shrug.png",
+  },
 ];

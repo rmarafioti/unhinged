@@ -23,9 +23,10 @@ export default function Gallery() {
   };
 
   return (
-    <>
+    <main>
       {currentImageObj && (
         <>
+          <header>welcome to my page!</header>
           <section id="shrugSec">
             <p id="shrug1end">¯\_(ツ)_/¯</p>
             <p id="shrug2">¯\_(ツ)_/¯</p>
@@ -38,23 +39,19 @@ export default function Gallery() {
             <p id="shrug2">¯\_(ツ)_/¯</p>
             <p id="shrug1ended">¯\_(ツ)_/¯</p>
           </section>
+          <section id="number">
+            <p>💊 {currentImageObj.id} 💊</p>
+          </section>
           <section id="pic">
             {isLoading ? (
               <p id="load">💀</p>
             ) : (
-              <img id="images" src={imageurl} />
+              <img id="images" src={imageurl} onClick={handleClick} />
             )}
           </section>
-          <section id="number">
-            <p>{currentImageObj.id}</p>
-          </section>
+          <p id="clickText">^ click the image ^</p>
         </>
       )}
-      <section id="click">
-        <button id="button" onClick={handleClick}>
-          Doom Click Me to 13!
-        </button>
-      </section>
       <section id="shrugSec">
         <p id="shrug1end">¯\_(ツ)_/¯</p>
         <p id="shrug2">¯\_(ツ)_/¯</p>
@@ -67,6 +64,6 @@ export default function Gallery() {
         <p id="shrug2">¯\_(ツ)_/¯</p>
         <p id="shrug1ended">¯\_(ツ)_/¯</p>
       </section>
-    </>
+    </main>
   );
 }
